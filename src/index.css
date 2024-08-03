@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(5, 5, 5, 0.87);
+  background-color: hsl(0, 0%, 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  margin: 2em 8em;
+  border: 2px red solid;
+  /* width: 100%; */
+  /* height: 90vh; */
+  h2 {
+    color: hsl(230, 17%, 14%);
+    font-weight: 900;
+  }
+  span {
+    color: hsl(228, 12%, 44%);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p,
+figure {
+  margin: 0;
+}
+
+.followersMode {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modeButton {
+  display: flex;
+  width: 8em;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px black solid; */
+  p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+.BigCards {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* height: 90%; */
+}
+
+.TopCard {
+  background-color: hsl(227, 47%, 96%);
+  /* border-radius: 5px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 13.2em;
+  height: 10em;
+  margin: 2em 0;
+  /* border-top: solid hsl(208, 92%, 53%); */
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+    width: 90px;
+    font-size: 9px;
+    font-weight: 700;
+  }
+
+  h1 {
+    margin: 0;
+    /* background-color: green; */
+    height: 1.3em;
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  span {
+    font-size: small;
+    text-transform: uppercase;
+    /* background-color: red; */
+  }
+
+  h6 {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-top: 2em;
+    color: hsl(163, 72%, 41%);
+  }
+}
+
+.SmallCards {
+  /* border: 2px solid green; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.BottomCard {
+  border: 2px grey;
+  background-color: hsl(227, 47%, 96%);
+  width: 13.2em;
+  height: 6.5em;
+  margin: 0.8em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  h1 {
+    font-weight: 700;
+  }
+  h6 {
+    color: hsl(163, 72%, 41%);
+  }
+}
+
+.TopCard:hover,
+.BottomCard:hover {
+  background-color: hsla(229, 24%, 77%, 0.534);
+  cursor: pointer;
+}
+
+/* Aligning like and count icons */
+.likeCount {
+  /* background-color: rgb(64, 173, 64); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1em;
+  height: 5em;
+}
+
+/* Aligning logo and change icons */
+.logoChange {
+  /* background-color: rgb(179, 206, 81); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 1em;
+  height: 5em;
+}
+
+/* The box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3.2em;
+  height: 1.5em;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 35px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 2px;
+  border-radius: 35px;
+  transition: 0.5s;
+}
+
+/* Default dark theme slider background and fill*/
+input + .slider {
+  background: hsl(146, 68%, 55%);
+}
+input + .slider:before {
+  background-color: rgb(7, 7, 7);
+}
+
+/* Light theme slider background and fill*/
+input:checked + .slider {
+  background-color: grey;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: white;
+}
+
+/* Active hover state for the switch in light mode*/
+input:checked + .slider:hover {
+  background-color: hsl(146, 68%, 55%);
+}
+
+/* .darkMode {
+  background-color: hsl(230, 17%, 14%);
+  color: hsl(0, 0%, 100%);
+  .TopCard {
+    background-color: hsl(228, 28%, 20%);
+    p {
+      color: (228, 34%, 66%);
+    }
+  }
+} */
