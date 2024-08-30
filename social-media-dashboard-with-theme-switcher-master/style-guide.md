@@ -31,6 +31,9 @@ The designs were created to the following widths:
 
 ### Neutral
 
+  color: rgba(5, 5, 5, 0.87);
+  background-color: hsl(0, 0%, 100%);
+
 #### Dark Theme
 
 - Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)//
@@ -43,8 +46,8 @@ The designs were created to the following widths:
 #### Light Theme
 
 - Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)//
-
 - White (BG): hsl(0, 0%, 100%)
 - Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
 - Dark Grayish Blue (Text): hsl(228, 12%, 44%)
+
 - Very Dark Blue (Text): hsl(230, 17%, 14%)

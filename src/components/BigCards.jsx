@@ -4,6 +4,7 @@ const BigCards = () => {
   return (
     <div className="BigCards">
       <TopCard
+        topBorderColor={{ borderTop: "solid hsl(208, 92%, 53%)" }}
         icon={
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
             <path
@@ -23,6 +24,7 @@ const BigCards = () => {
         Today="12 Today"
       />
       <TopCard
+        topBorderColor={{ borderTop: "solid hsl(203, 89%, 53%)" }}
         icon={
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
             <path
@@ -42,6 +44,7 @@ const BigCards = () => {
         Today="99 Today"
       />
       <TopCard
+        topBorderColor={{ borderTop: "solid hsl(348, 97%, 39%)" }}
         icon={
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
             <defs>
@@ -68,6 +71,7 @@ const BigCards = () => {
         Today="1099 Today"
       />
       <TopCard
+        topBorderColor={{ borderTop: "solid hsl(348, 97%, 39%)" }}
         icon={
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
             <path
